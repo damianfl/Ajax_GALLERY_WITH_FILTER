@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700,800&amp;subset=latin-ext" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="wrapper">
+            <h1>Flickr Photo Galery</h1>
+            <p>Choose what group of photos you want to display</p>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <button data-info="dog" class="list-group-item--button">dog</button>
+                </li>
+                <li class="list-group-item">
+                    <button data-info="cat" class="list-group-item--button">Cat</button>
+                </li>
+                <li class="list-group-item">
+                    <button data-info="elephant" class="list-group-item--button">Elephant</button>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <button data-info="car" class="list-group-item--button">Car</button>
+                </li>
+                <li class="list-group-item">
+                    <button data-info="plane" class="list-group-item--button">Plane</button>
+                </li>
+                <li class="list-group-item">
+                    <button data-info="motorcycle" class="list-group-item--button">Motorcycle</button>
+                </li>
+            </ul>
+            <input id="inputElement" type="text" placeholder="Type what kind of photos are your looking for ...">
+            <button id="btnH" type="submit">buttonEventChange</button>
+            <div id="ajaxOutput"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

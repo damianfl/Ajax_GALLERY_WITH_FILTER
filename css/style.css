@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: #edeff0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 7px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(194, 194, 194, 1);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(194, 194, 194, 1);
+  box-shadow: 2px 2px 5px 0px rgba(194, 194, 194, 1);
+}
+
+.wrapper {
+  padding: 20px;
+}
+
+.list-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.list-group-item {
+  width: 33%;
+}
+
+.list-group-item--button {
+  width: 100%;
+  background-color: #edeff0;
+  padding: 5px 20px;
+  border-radius: 3px;
+  border: 0;
+  font-size: 18px;
+  text-align: center;
+  outline-color: transparent;
+}
+
+button:focus {
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(173, 173, 173, 1);
+  box-shadow: 1px 1px 2px 0px rgba(173, 173, 173, 1);
+}
+
+.selected {
+  background-color: rgb(184, 184, 184);
+}
+
+#inputElement {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+#inputElement:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.image {
+  display: block;
+  min-height: 240px;
+  background: #edeff0;
+  text-align: center;
+  height: 260px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.image:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#ajaxOutput {
+  margin-top: 50px;
+}
+
+.ajaxOutput--wrapper {
+  /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ajaxOutput--wrapper li {
+  width: 33%;
+  margin-top: 4.3px;
+  position: relative;
+}
+
+.ajaxOutput--wrapper li a {
+  position: relative;
+}
+
+.ajaxOutput--wrapper li a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Ovrylay div */
+
+.overlay {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.show {
+  display: block;
+}
